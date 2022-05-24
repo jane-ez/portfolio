@@ -97,7 +97,6 @@ h6 {
 }
 
 .nav-wrapper{
-    border: 1px dashed lightcoral;
     grid-area: nav-wrapper;
     border-bottom: 1px solid var(--borderColor);
     display: flex;
@@ -138,20 +137,21 @@ h6 {
 
 .left-column {
     grid-area: 'left-column';
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 3rem 0;
     align-content: center;
     justify-content: center;
 }
-
+.left-column h5 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
 .right-column {
-    border: 1px dashed lightcoral;
     grid-area: 'right-column';
     display: grid;
     align-content: center; 
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .browser-dot {
@@ -226,7 +226,7 @@ h6 {
     padding-top: 30px;
 }
 
-.corner {
+.corner-id {
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -248,24 +248,30 @@ h6 {
     left: -5px;
 }
 #corner-br {
-    top: -5px;
+    bottom: -5px;
     right: -5px;
 }
 
 .about-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-bottom: 50px;
-    padding-top: 50px;
-    gap: 100px;
+    padding: 3rem 0;
+    gap: 80px;
 }
 
-#skills {
+.skills {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
+    align-items: center;
 }
-
+.skills h6 {
+    margin: .5rem;
+}
+.intention {
+    text-align: center;
+    padding: 1rem;
+}
 #social-img {
     width: 100%;
 }
@@ -345,14 +351,14 @@ h6 {
     border: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .main-container{
-        width: 95%;
+        width: 90%;
     }
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .intro-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas: 'nav-wrapper' 'left-column' 'right-column';
