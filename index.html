@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&family=Russo+One&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="default.css">
-<link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>portfolio Website</title>
 </head>
+
 <body>
-  <section class="s1">
-      <div class="main-container">
-          <div class="greeting-wrapper">
-              <h1>Hi, I'm Jane Okorie</h1>
-          </div>
-          <div class="intro-wrapper">
-              <div class="nav-wrapper">
-                  <div class="dots-wrapper">
-                    <a href="#" title="An empty link"><div id="dot-1" class="browser-dot"></div></a>
-                    <a href="#" title="An empty link"><div id="dot-2" class="browser-dot"></div></a>
-                    <a href="#" title="An empty link"><div id="dot-3" class="browser-dot"></div></a>
-                  </div>
-                  <ul id="navigation">
-                      <li><a href="#">Contact</a></li>
-                  </ul>
-              </div>
-              <div class="left-column">
-                  <img src="jane.PNG" alt="profile-picture" id="profile-picture">
-                  <h5>Personalized Theme</h5>
-                  <div class="theme-option-wrapper">
-                      <div data-mode="light" id="light-mode" class="theme-dot" title="Light mode"></div>
-                      <div data-mode="blue" id="blue-mode" class="theme-dot" title="Blue mode"></div>
-                      <div data-mode="green" id="green-mode" class="theme-dot" title="Green mode"></div>
-                      <div data-mode="purple" id="purple-mode" class="theme-dot" title="Purple mode"></div>
-                      <p id="settings-note">Theme settings will be saved for<br> your next visit. Try clicking on the dots to change the theme.</p>
-                  </div>
-              </div>
-              <div class="right-column">
-                  <div id="preview-shadow">
-                      <div  id="preview">
-                          <div id="corner-tr" class="corner-id"></div>
-                          <div id="corner-tl" class="corner-id"></div>
-                          <h3>What I Do</h3>
-                          <p>I'm a skilled Frontend Developer with a passion for creating seamless web experiences.</p>
-                          <div id="corner-bl" class="corner-id"></div>
-                          <div id="corner-br" class="corner-id"></div>
-                      </div>
-                  </div>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Jane Okorie</h1>
+            </div>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <a href="#" title="An empty link">
+                            <div id="dot-1" class="browser-dot"></div>
+                        </a>
+                        <a href="#" title="An empty link">
+                            <div id="dot-2" class="browser-dot"></div>
+                        </a>
+                        <a href="#" title="An empty link">
+                            <div id="dot-3" class="browser-dot"></div>
+                        </a>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-          </div>
-      </div>
-  </section> 
-  
-  <section class="s2">
-      <div class="main-container">
-          <div class="about-wrapper">
-              <div class="about-me">
-                  <h4>More About Me</h4>
-                  <p>I combine technical expertise with a keen eye for design, ensuring that user interfaces are both functional and visually appealing. </p>
-                  <p>I also thrive in turning complex requirements into elegant, user-friendly solutions.</p>
-                  <hr>
-                  
-              </div>
-              <!-- <div>
+                <div class="left-column">
+                    <img src="jane.PNG" alt="profile-picture" id="profile-picture">
+                    <h5>Personalized Theme</h5>
+                    <div class="flex flex-col md:flex-row px-1">
+                        <div class="theme-option-wrapper">
+                            <div data-mode="light" id="light-mode" class="theme-dot" title="Light mode"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot" title="Blue mode"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot" title="Green mode"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot" title="Purple mode"></div>
+                        </div>
+
+                        <p id="settings-note">Theme settings will be saved for<br> your next visit. Try clicking on the
+                            dots to change the theme.</p>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview" class="w-[300px] [@media(max-width:640px)]:w-full">
+                            <div id="corner-tr" class="corner-id"></div>
+                            <div id="corner-tl" class="corner-id"></div>
+                            <h3>What I Do</h3>
+                            <p>I'm a skilled Software Engineer with a passion for creating seamless web experiences.
+                            </p>
+                            <div id="corner-bl" class="corner-id"></div>
+                            <div id="corner-br" class="corner-id"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More About Me</h4>
+                    <p>I combine technical expertise with a keen eye for design, ensuring that user interfaces are both
+                        functional and visually appealing. </p>
+                    <p>I also thrive in turning complex requirements into elegant, user-friendly solutions.</p>
+                    <hr>
+
+                </div>
+                <!-- <div>
                     <div class="intention">
                         <h4>Areas I Intend To Explore</h4>
                         <p>Junior developer with primary focus on Django + React: <a target="_blank" href="#">Download Resume</a></p>
@@ -92,94 +108,101 @@
                         </ul>
                     </div>
                 </div> -->
-          </div>
-          <div class="social-links">
-            <h3>Skills</h3>
-            <div class="skills">
-                <ul>
-                    <h6>Technical Skills</h6>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Web Design</li>
-                    <li>Git & GitHub</li>
-                </ul>
-                <ul>
-                    <h6>Soft Skillls</h6>
-                    <li>Detail Oriented</li>
-                    <li>Problem-solving</li>
-                    <li>Teamwork</li>
-                    <li>Analytical Skill</li>
-                    <li>Good Verbal & Written Communication Skill</li>
-                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Skills</h3>
+                <div class="skills">
+                    <ul>
+                        <h6 class="whitespace-nowrap">Technical Skills</h6>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                    <ul>
+                        <h6>Soft Skillls</h6>
+                        <li>Detail Oriented</li>
+                        <li>Problem-solving</li>
+                        <li>Teamwork</li>
+                        <li>Analytical Skill</li>
+                        <li>Good Verbal & Written Communication Skill</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+                <img id="social-img" src="" alt="">
+                <h3>Find me on Twitter and GitHub</h3>
+                <a target="_blank" href="https://x.com/spencer_jane1">Twitter: @spencer_jane</a>
+                <a target="_blank" href="https://github.com/jane-ez">GitHub: github.com/jane-ez</a>
             </div>
         </div>
-          <div class="social-links">
-              <img id="social-img" src="" alt="">
-              <h3>Find me on Twitter and GitHub</h3>
-              <a target="_blank" href="#">Twitter: @spencer_jane</a>
-              <a target="_blank" href="#">GitHub: github.com/jane-ez</a>
-          </div>
-      </div>
-  </section>
+    </section>
 
-  <section class="s2">
-      <div class="main-container">
-          <h1 style="text-align: center;">Some of my past projects</h1>
-          <div class="post-wrappper">
-              <div>
-                  <div class="post">
-                      <div class="post-preview">
-                          <h5 class="post-title">Flutterwave Website Clone</h5>
-                          <p class="post-intro">I reverse engineered the Flutterwave website. It's fully responsive. I'm not through though, but I've done 90% of the work and will update it when i'm done. </p>
-                          <a href="https://jane-ez.github.io/main-project/">CHECK IT OUT</a>
-                      </div>
-                  </div>    
-                  <div class="post">
-                    <div class="post-preview">
-                        <h5 class="post-title">Starbuck Website clone</h5>
-                        <p class="post-intro">Using flexbox, grid and other CSS properties, I recreated the Starbuck website.</p>
-                        <a href="https://jane-ez.github.io/starbuck-like/">CHECK IT OUT</a>
-                  </div>
-                  <div class="post">
-                    <div class="post-preview">
-                        <h5 class="post-title">Rookie Website</h5>
-                        <p class="post-intro">I decide to flex my animation and transform muscles on this project. It is very beautiful (the choice of color and layout is excellent) and 100% responsive.</p>
-                        <a href="https://jane-ez.github.io/rookie-design/">CHECK IT OUT</a>
-                  </div>
-                  <div class="post">
-                    <div class="post-preview">
-                        <h5 class="post-title">Web Design</h5>
-                        <p class="post-intro">The layout of this project is dope. Used a background image to display the showcase.</p>
-                        <a href="https://jane-ez.github.io/project1/">CHECK IT OUT</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+    <section class="s2">
+        <div class="main-container">
+            <h1 style="text-align: center;">Some of my past projects</h1>
+            <div class="post-wrappper">
+                <div>
+                    <div class="post">
+                        <div class="post-preview">
+                            <h5 class="post-title">Flutterwave Website Clone</h5>
+                            <p class="post-intro">I reverse engineered the Flutterwave website. It's fully responsive.
+                                I'm not through though, but I've done 90% of the work and will update it when i'm done.
+                            </p>
+                            <a target="_blank" href="https://jane-ez.github.io/main-project">CHECK IT OUT</a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-preview">
+                            <h5 class="post-title">Starbuck Website clone</h5>
+                            <p class="post-intro">Using flexbox, grid and other CSS properties, I recreated the Starbuck
+                                website.</p>
+                            <a target="_blank" href="https://jane-ez.github.io/starbuck-like">CHECK IT OUT</a>
+                        </div>
+                        <div class="post">
+                            <div class="post-preview">
+                                <h5 class="post-title">Rookie Website</h5>
+                                <p class="post-intro">I decide to flex my animation and transform muscles on this
+                                    project. It is very beautiful (the choice of color and layout is excellent) and 100%
+                                    responsive.</p>
+                                <a target="_blank" href="https://jane-ez.github.io/rookie-design">CHECK IT OUT</a>
+                            </div>
+                            <div class="post">
+                                <div class="post-preview">
+                                    <h5 class="post-title">Web Design</h5>
+                                    <p class="post-intro">The layout of this project is dope. Used a background image to
+                                        display the showcase.</p>
+                                    <a target="_blank" href="https://jane-ez.github.io/project1">CHECK IT OUT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
 
-  <section class="s2">
-      <div class="main-container">
-          <h3 style="text-align: center;">Get in Touch</h3>
-          <form id="contact-form">
-              <label>Name</label>
-              <input class="input-field" type="text" name="name">
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
 
-              <label>Subject</label>
-              <input class="input-field" type="text" name="subject">
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
 
-              <label>Email</label>
-              <input class="input-field" type="emai;" name="email">
+                <label>Email</label>
+                <input class="input-field" type="emai;" name="email">
 
-              <label>Message</label>
-              <textarea class="input-field" name="message"></textarea>
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
 
-              <input id="submit-bttn" type="submit" value="send">
-              
-          </form>
-      </div>
-  </section>
+                <input id="submit-bttn" type="submit" value="send">
 
-  <script type="text/javascript" src="script.js"></script>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

@@ -212,7 +212,7 @@ h6 {
 }
 
 #preview {
-    width: 300px;
+    /* width: 300px; */
     border: 1.5px solid #17a2ba;
     background-color: var(--previewBg);
     padding: 15px;
